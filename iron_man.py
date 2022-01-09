@@ -1,5 +1,6 @@
 import cv2
 import os
+import datetime as dt
 
 
 class FaceMasker:
@@ -93,6 +94,7 @@ class FaceMasker:
         cv2.destroyAllWindows()
         cv2.waitKey(1)
 
+
 mask = cv2.imread('iron_man_helmet.png')
 face_masker = FaceMasker()
-face_masker.start(mask, 1.8, 'Daniyar_Kurmanbayev_Task5_CartoonFilter.mp4')
+face_masker.start(mask, 1.8, f'{dt.datetime.now()}.mp4')
