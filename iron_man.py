@@ -1,6 +1,6 @@
+import datetime as dt
 import cv2
 import os
-import datetime as dt
 
 
 class FaceMasker:
